@@ -12,8 +12,7 @@ const Child = (props) => {
                 itemArr.map((item) => {
                     return (
                         <li key={item.name}>
-                            {item.name}-${item.price}
-                            <button name={item.name} onClick={props.removeItem}>Remove</button>
+                            {item.name} - ${item.price} <button name={item.name} onClick={props.removeItem}>Remove</button>
                         </li>
                     )
                 })
